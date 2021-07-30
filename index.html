@@ -24,7 +24,7 @@
           }
       }
       
-      let response = await fetch(`api/GetMessage`, options);
+      let response = await fetch(`api/echo/GetMessage`, options);
       let message = await response.json();
 
       document.querySelector("#message").innerHTML = message.result.text
